@@ -52,9 +52,9 @@ export default function Home() {
   useEffect(() => {
     if (isLoading) return;
 
-    // A. Baseline setup for Robot Wrapper
+    // A. Baseline setup for Robot Wrapper — positioned on the RIGHT side
     gsap.set(".robot-assistant-wrapper", {
-      left: "50%",
+      left: "75%",
       top: "22vh",
       scale: 1.15,
       xPercent: -50,
@@ -75,8 +75,8 @@ export default function Home() {
 
     robotTl
       .to(".robot-assistant-wrapper", {
-        // 25% Scroll: Slowly moves upward (still behind name)
-        left: "50%",
+        // 25% Scroll: Slowly moves upward (still on right side)
+        left: "75%",
         top: "10vh",
         scale: 1.05,
         xPercent: -50,
@@ -86,7 +86,7 @@ export default function Home() {
       })
       .to(".robot-assistant-wrapper", {
         // 50% Scroll: Moves toward the navbar (lifts z-index in front)
-        left: "70%",
+        left: "80%",
         top: "60px",
         scale: 0.88,
         xPercent: -50,

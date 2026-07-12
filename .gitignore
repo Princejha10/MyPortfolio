@@ -1,83 +1,41 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-
-# Node dependencies
-**/node_modules/
-node_modules/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# VS Code related
-.vscode/
-
-# Environment secrets & credentials
-.env
-.env.*
-.envrc
-secrets.json
-service-account*.json
-firebase-adminsdk*.json
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio build artifacts
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# Gradle files
-.gradle/
-android/local.properties
-android/key.properties
-android/app/src/main/assets/google-services.json
-
-# Keys, Certificates and Keystores
-*.jks
-*.keystore
 *.pem
-*.p12
-*.key
-google-services.json
-GoogleService-Info.plist
 
-# iOS build and dependency directories
-ios/Pods/
-ios/.symlinks/
-ios/Flutter/App.framework
-ios/Flutter/Flutter.framework
-ios/Flutter/Flutter.podspec
-ios/derived_data/
-*/.xcode_backend_sh_state
-/ios/Flutter/Generated.xcconfig
-/ios/Flutter/flutter_export_environment.sh
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# CocoaPods lock files
-Podfile.lock
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
